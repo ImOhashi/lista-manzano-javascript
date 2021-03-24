@@ -1,15 +1,15 @@
-const exercicioC = require("../../src/variaveis/exercicioC");
+const calculoDeVolume = require("../../src/variaveis/calculoDeVolume");
 
 describe("Calculate the volume", () => {
   test("it should be a parameter raio", () => {
-    expect(() => exercicioC(1)).toThrow("Inserted parameters are invalid");
+    expect(() => calculoDeVolume(1)).toThrow("Inserted parameters are invalid");
   });
   test("it should be a parameter altura", () => {
-    expect(() => exercicioC(null, 1)).toThrow(
+    expect(() => calculoDeVolume(null, 1)).toThrow(
       "Inserted parameters are invalid"
     );
   });
   test("it should be a correct parameters", () => {
-    expect(exercicioC(1, 2)).toBeCloseTo(12.57);
+    expect(calculoDeVolume(1, 2)).toBeCloseTo(12.57);
   });
 });

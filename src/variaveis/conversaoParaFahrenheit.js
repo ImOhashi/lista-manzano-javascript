@@ -1,4 +1,4 @@
-function exercicioA(celsius) {
+function conversaoParaFahrenheit(celsius) {
   if (typeof celsius === "number") {
     const fahrenheit = (9 * celsius + 160) / 5;
     return fahrenheit;
@@ -7,4 +7,4 @@ function exercicioA(celsius) {
   }
 }
 
-module.exports = exercicioA;
+module.exports = conversaoParaFahrenheit;

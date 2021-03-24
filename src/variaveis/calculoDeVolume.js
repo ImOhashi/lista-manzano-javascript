@@ -1,4 +1,4 @@
-function exercicioC(raio, altura) {
+function calculoDeVolume(raio, altura) {
   if (typeof raio !== "number" || typeof altura !== "number") {
     throw new Error("Inserted parameters are invalid");
   } else {
@@ -8,4 +8,4 @@ function exercicioC(raio, altura) {
   }
 }
 
-module.exports = exercicioC;
+module.exports = calculoDeVolume;
